@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Runtime caches (the library uses /tmp/chrome-fingerprint.json anyway)
+*.log
+*.cache
+
+# Local notes not intended for publication
+NOTES.local.md
+TODO.local.md
+
+# AI development artifacts (session-local — never publish)
+HANDOFF.md
+.specify/
+.claude/

@@ -1,0 +1,8 @@
+# Feature 006 T060 — golden lock file.
+# SHA-256 of the extracted safety check JS (via `_emit_safety_js '#target'`).
+# Any mismatch fails the test run until regeneration ceremony is performed.
+#
+# Regenerate with: scripts/regenerate-goldens.sh
+
+safety_js_sha256=cb15e314cb780b4beb49776c13020a2abccb55c802a31c8c3afb7fa8e34ca8cc
+safety_js_selector_stub=#target

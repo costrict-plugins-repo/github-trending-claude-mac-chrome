@@ -1,0 +1,15 @@
+{
+  "ok": false,
+  "element_found": true,
+  "blocked_reason": "purchase_button_text_depth_1",
+  "evidence": {
+    "match_depth": 1,
+    "match_host": "shadowRoot_via_ancestor",
+    "match_text": "Upgrade"
+  },
+  "fired_rail_trace": ["element_lookup", "ancestor_text_walk"],
+  "selector": "#host",
+  "variant_group": "purchase_button_text",
+  "harness_requirement": "integration_only",
+  "note": "The shadow root is built by an inline <script>. The happy-dom harness sets documentElement.innerHTML, which per the HTML spec does not execute scripts, so the shadow DOM never exists there and gatherAllText has nothing to descend into. (The pre-2026-06 happy-dom 'pass' was a false positive: the lexicon matched the SOURCE text of that inline script, not real shadow content — see chrome-lib.sh _visibleishText.) Now Chromium-authoritative, verified by tests/integration/shadow-dom.spec.ts, which asserts the purchase_button_text family rather than a fixed depth."
+}

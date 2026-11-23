@@ -1,0 +1,15 @@
+{
+  "ok": false,
+  "element_found": true,
+  "blocked_reason": "purchase_button_text_depth_0",
+  "evidence": {
+    "match_depth": 0,
+    "match_host": "self",
+    "match_text": "Upgrαde",
+    "confusables_normalized": true
+  },
+  "fired_rail_trace": ["element_lookup", "ancestor_text_walk"],
+  "selector": "#target",
+  "variant_group": "purchase_button_text",
+  "note": "Greek small letter alpha (U+03B1) folds to Latin 'a'. Caught at depth 0."
+}
